@@ -1,4 +1,4 @@
-# IoT Project: E-Coating Streaming Data Pipeline simulator
+# IoT Project: E-Coating Streaming Data Pipeline Simulator
 
 ## Data source 
 Data we used in this project is E-coating ultrafiltration maintenance dataset from [kaggle](https://www.kaggle.com/boyangs444/process-data-for-predictive-maintenance). 
@@ -14,6 +14,7 @@ In addition, a mysql container with UI is also included in the docker-compose fi
 3. Kafka-Connect
 4. FTP Server
 5. Consumer Application
+6  Mysql
 
 ## Data ingestion Flow Chart 
 
@@ -39,7 +40,10 @@ Open up terminal or command prompt and run:
 
 # How to Test
 After *docker-compose* has been ran, go to the following link:
-    
+
+    1. check csv file has been generated and processing in real time. 
+    /home/rebecca/IdeaProjects/IoTDataflow_v.1.2.0/data/iotpartition
+    2. check output message under below path by chrome. 
     localhost:8080/kafka/getmessages
 
 From here you will see the page is in a constant stage of loading. This is the *consumer* working and it will consume streams sent by Kafka-Connect to *kafka-sftp-demo* topic.
