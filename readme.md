@@ -18,7 +18,7 @@ In addition, a mysql container with UI is also included in the docker-compose fi
 
 ## Data ingestion Flow Chart 
 
-![picture](/home/rebecca/IdeaProjects/IoTDataflow_v.1.2.0/dataflow.PNG)
+![picture](dataflow.PNG)
 
 ## Prequisites
 - The only prequisite to run is to have docker installed for respective OS. 
