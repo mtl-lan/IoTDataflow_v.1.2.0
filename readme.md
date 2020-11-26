@@ -9,12 +9,12 @@ This IoT project contains a local python APP to read source csv file in line by 
 It also contains a docker-compose file that will start up 5 services that will demonstrate the use case of using Kafka-Connect source connectors to pull files from an FTP server, post it to a Kafka topic which will be read by a consumer application. For this demo, we will be using Confluent Kafka.
 In addition, a mysql container with UI is also included in the docker-compose file which can be further used by another local app to read data from kafka and push data into mysql database. 
 
-1. Zookeeper
-2. Kafka
-3. Kafka-Connect
-4. FTP Server
-5. Consumer Application
-6  Mysql
+1. Zookeeper: keeps track of status of the kafka cluster nodes and kafka topics, partitions, etc. 
+2. Kafka : Distributed data store optimized for ingesting and processing streaming data in real-time. Message is store in terms of "topic". 
+3. Kafka-Connect : A Kafka Connect plugin for SFTP servers. You can [download](https://www.confluent.io/hub/confluentinc/kafka-connect-sftp) here. 
+4. FTP Server : It is an important component in FTP architecture and helps in exchanging of files over internet.
+5. Consumer Application : It will consume the data from kafka by specific "topic". 
+6. Mysql(Additional) :  an open-source relational database management system (RDBMS). For An extra local app to consume data and write the data into mysql. 
 
 ## Data ingestion Flow Chart 
 
